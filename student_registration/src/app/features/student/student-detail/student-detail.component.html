@@ -1,0 +1,28 @@
+<div class="container">
+    <div *ngIf="student" class="row justify-content-center mt-5">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-center">Student Details</h4>
+          </div>
+          <div class="card-body text-center">
+           
+            <img src="assets/user.png" width="200px" alt="Default Profile Picture" class="img-fluid rounded-circle profile-pic">
+           
+            <div class="mt-4">
+              <h3>{{ student.firstName }} {{ student.lastName }}</h3>
+              <p><strong>Student ID:</strong> {{ student.studentId }}</p>
+              <p><strong>Mobile:</strong> {{ student.mobile }}</p>
+              <p><strong>Email:</strong> {{ student.email }}</p>
+              <p><strong>NIC:</strong> {{ student.nic }}</p>
+              
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            
+            <button class="btn btn-primary" (click)="goBack()">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
